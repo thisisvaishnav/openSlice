@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Today's Prep Sprint</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Lesson 0002</div>
+    <h1>Today's Prep Sprint</h1>
+    <p class="lede">July 14, 2026 is not a build day. It is a leverage day: install, observe, write, and sharpen the winning story.</p>
+  </header>
+
+  <section class="callout">
+    <strong>Today's target:</strong> End the day with SigNoz running locally through Foundry, one toy telemetry flow explored, and a pre-event blog outline ready to draft.
+  </section>
+
+  <h2>Block 1: Understand the battlefield</h2>
+  <p><strong>Timebox:</strong> 45 minutes. Read the official hackathon page once with a notebook open. Extract only four things: tracks, judging criteria, required submission artifacts, and pre-event blog rules.</p>
+  <p><strong>Deliverable:</strong> Write a 6-line judging matrix: Impact, Creativity, Technical Excellence, Best Use of SigNoz, UX, Presentation.</p>
+
+  <h2>Block 2: Install SigNoz the judge's way</h2>
+  <p><strong>Timebox:</strong> 90 minutes. Follow the official Docker install guide using Foundry. Your goal is not mastery yet; it is to learn the reproducible path and produce the files judges expect later.</p>
+  <p><strong>Deliverable:</strong> A short note answering: What does <code>casting.yaml</code> describe? When is <code>casting.yaml.lock</code> created? Which ports matter?</p>
+
+  <h2>Block 3: Send toy telemetry</h2>
+  <p><strong>Timebox:</strong> 90 minutes. Use a tiny practice app or example, not the final hackathon idea. Send one trace, one log, and one metric into SigNoz if possible.</p>
+  <p><strong>Deliverable:</strong> Three screenshots or notes: where the trace appears, where logs appear, and where a metric/dashboard panel appears.</p>
+
+  <h2>Block 4: MCP reconnaissance</h2>
+  <p><strong>Timebox:</strong> 45 minutes. Read the Foundry MCP server doc. Do not overbuild. Understand the endpoint, authentication modes, and why MCP helps an AI assistant query observability data.</p>
+  <p><strong>Deliverable:</strong> One paragraph: "In my hackathon demo, MCP could let an agent..."</p>
+
+  <h2>Block 5: Maintainer visibility habit</h2>
+  <p><strong>Timebox:</strong> 60 minutes. Read five OpenTelemetry Collector Contrib issues and two merged PRs in one component area. Do not comment yet unless you can add real value.</p>
+  <p><strong>Deliverable:</strong> List one component that feels approachable and one contribution style you can attempt later: docs, tests, bug reproduction, or small code fix.</p>
+
+  <h2>Block 6: Pre-event blog outline</h2>
+  <p><strong>Timebox:</strong> 45 minutes. Draft the shape of a proper blog for the July 19 pre-event prize. Make it honest and concrete.</p>
+  <div class="card">
+    <strong>Suggested title</strong>
+    First Contact with SigNoz: Making My Toy App Observable Before the Hackathon
+  </div>
+  <p><strong>Deliverable:</strong> Outline five sections: why observability matters for AI agents, setup, first telemetry, what confused me, what I will build during the hackathon.</p>
+
+  <h2>Retrieval drill</h2>
+  <div class="quiz">
+    <p>What is today's most important outcome?</p>
+    <button onclick="answer('Not today. Final project coding waits for the official start.')">Start final project code</button>
+    <button onclick="answer('Correct. Practice the stack and create evidence for the early blog.')">Run SigNoz and learn</button>
+    <button onclick="answer('Not enough. Reading matters, but visible practice matters more.')">Only read documentation</button>
+    <p class="answer" id="answer"></p>
+  </div>
+
+  <footer>
+    Sources: <a href="https://www.wemakedevs.org/hackathons/signoz">hackathon page</a>, <a href="https://signoz.io/docs/install/docker/">Foundry install guide</a>, and <a href="https://github.com/SigNoz/foundry/blob/main/docs/concepts/mcp-server.md">Foundry MCP server doc</a>. Ask the agent to review your judging matrix and blog outline when they are drafted.
+  </footer>
+</main>
+<script>
+function answer(text) {
+  document.getElementById('answer').textContent = text;
+}
+</script>
+</body>
+</html>

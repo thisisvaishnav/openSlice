@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hackathon Strategy Map</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Reference 0001</div>
+    <h1>SigNoz Hackathon Strategy Map</h1>
+    <p class="lede">A quick sheet for turning the rules into a project judges can understand, trust, rerun, and remember.</p>
+  </header>
+
+  <h2>The scoring translation</h2>
+  <div class="grid">
+    <section class="card"><strong>Impact</strong>Pick a painful debugging or reliability problem. Show the before/after.</section>
+    <section class="card"><strong>Creativity</strong>Use observability in the product loop, not just as a screenshot at the end.</section>
+    <section class="card"><strong>Technical excellence</strong>Small scope, reliable path, tests or scripted demo, reproducible deployment.</section>
+    <section class="card"><strong>Best use of SigNoz</strong>Traces plus logs plus metrics plus dashboards plus alerts plus Query Builder plus MCP where possible.</section>
+    <section class="card"><strong>User experience</strong>One command or clear path to value. A clean dashboard with a story.</section>
+    <section class="card"><strong>Presentation</strong>README, demo video, and blog all answer: problem, architecture, telemetry, evidence, lessons.</section>
+  </div>
+
+  <h2>The winning shape</h2>
+  <p><strong>Build a system that fails in an interesting way, then make SigNoz the way to understand and fix it.</strong> Judges remember cause-and-effect. A project that says "we traced an agent" is weaker than a project that says "when the agent makes a bad tool choice, this trace, log, metric, dashboard, and alert show why."</p>
+
+  <h2>Pre-hackathon allowed work</h2>
+  <ul>
+    <li>Read docs and collect references.</li>
+    <li>Sketch architecture diagrams and demo storyboards.</li>
+    <li>Practice installing SigNoz with Foundry and Docker Compose.</li>
+    <li>Enable the optional SigNoz MCP server in a practice casting and learn the connection flow.</li>
+    <li>Practice with non-submission toy projects.</li>
+    <li>Study OpenTelemetry Collector Contrib issues and contribution workflow.</li>
+  </ul>
+
+  <h2>Early win before July 19</h2>
+  <p>The official page includes a pre-event blog prize. The smart move is to self-host SigNoz, send toy telemetry, explore one feature deeply, and publish a real blog before July 19, 2026. This is not the final hackathon project; it is hands-on practice plus visibility.</p>
+
+  <h2>Submission checklist</h2>
+  <ul>
+    <li>Repo includes <code>casting.yaml</code> and <code>casting.yaml.lock</code>.</li>
+    <li>Foundry path is reproducible: <code>foundryctl gauge</code>, <code>foundryctl forge</code>, and <code>foundryctl cast</code> are documented.</li>
+    <li>If using MCP, <code>spec.mcp.spec.enabled: true</code> is documented and the <code>http://localhost:8000/mcp</code> flow is explained.</li>
+    <li>README has a 5-minute judge path.</li>
+    <li>Demo shows a live or scripted failure and how SigNoz reveals it.</li>
+    <li>Dashboards and alerts are named for user outcomes, not internal plumbing.</li>
+    <li>Blog is honest: what broke, what you learned, and how telemetry changed the build.</li>
+    <li>AI assistant usage is disclosed.</li>
+  </ul>
+
+  <footer>
+    Read alongside <a href="../lessons/0001-understand-the-game.html">Lesson 0001</a>. Ask the agent to turn any project idea into a judging matrix before you commit to it.
+  </footer>
+</main>
+</body>
+</html>
