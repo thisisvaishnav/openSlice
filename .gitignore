@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# SigNoz Foundry / casting artifacts
+casting.yaml
+casting.yaml.lock
+
+# Logs
+*.log
+
+# Project directories (to ignore if desired)
+arrays/
+pours/
+lessons/
+learning-records/
+reference/
+assets/
+

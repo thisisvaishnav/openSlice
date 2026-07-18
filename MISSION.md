@@ -19,3 +19,4 @@ Prepare for the July 20-26, 2026 SigNoz hackathon by learning enough OpenTelemet
 - Building hackathon code before the official start.
 - Chasing every OpenTelemetry subsystem at once.
 - Optimizing for flashy demos that do not use SigNoz deeply.
+
