@@ -1,25 +1,21 @@
 # Python
-__pycache__/
-*.py[cod]
-*.egg-info/
 .venv/
-venv/
-
-# OS
+__pycache__/
+*.pyc
+*.pyo
 .DS_Store
 
-# SigNoz Foundry / casting artifacts
+# Personal study material — not part of the project
+MISSION.md
+NOTES.md
+RESOURCES.md
 casting.yaml
 casting.yaml.lock
-
-# Logs
-*.log
-
-# Project directories (to ignore if desired)
 arrays/
 pours/
+assets/
 lessons/
 learning-records/
 reference/
-assets/
-
+send_telemetry.py
+signoz_otlp_smoke.py
