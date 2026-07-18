@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turn Progress Into Assets</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Lesson 0004</div>
+    <h1>Turn Progress Into Assets</h1>
+    <p class="lede">July 15 is about making yesterday's work usable: screenshots, blog draft, dashboard practice, and a sharper agent-observability design.</p>
+  </header>
+
+  <section class="callout">
+    <strong>Today's target:</strong> Build an evidence pack and draft the pre-event blog. The prize is not just that SigNoz runs; it is that you can explain what you learned clearly.
+  </section>
+
+  <h2>Block 1: Evidence pack</h2>
+  <p><strong>Timebox:</strong> 45 minutes. Re-run the telemetry loop and capture clean screenshots. Name each screenshot by what it proves.</p>
+  <ul>
+    <li><code>01-docker-containers-running</code></li>
+    <li><code>02-signoz-service-hackathon-toy-app</code></li>
+    <li><code>03-trace-first-smoke-test</code></li>
+    <li><code>04-log-first-telemetry-message</code></li>
+    <li><code>05-metric-latency-visible</code></li>
+  </ul>
+
+  <h2>Block 2: Dashboard practice</h2>
+  <p><strong>Timebox:</strong> 60 minutes. Create one dashboard panel for <code>hackathon.toy_agent.latency_ms</code>. Make the panel title human-readable: "Toy Agent Latency".</p>
+  <p><strong>Deliverable:</strong> One screenshot of the dashboard and one sentence explaining what the panel shows.</p>
+
+  <h2>Block 3: Blog draft</h2>
+  <p><strong>Timebox:</strong> 90 minutes. Draft the pre-event blog. Keep it honest and beginner-friendly. Write what happened, not what sounds impressive.</p>
+  <div class="card">
+    <strong>Blog skeleton</strong>
+    Problem: AI systems are hard to debug. Setup: I installed SigNoz locally. First signal: I sent trace/log/metric data. Confusion: what was unclear. Learning: how OTLP and ports fit together. Next: agent observability during the hackathon.
+  </div>
+
+  <h2>Block 4: Agent observability design</h2>
+  <p><strong>Timebox:</strong> 60 minutes. Sketch the final project without coding it. Draw the agent loop and label where traces, logs, metrics, dashboards, alerts, and MCP appear.</p>
+  <p><strong>Deliverable:</strong> A one-page design note titled "Agent Observability Demo Story".</p>
+
+  <h2>Block 5: Retrieval drill</h2>
+  <div class="quiz">
+    <p>What changes today from yesterday?</p>
+    <button onclick="answer('Not yet. Final project code waits until July 20.')">Start final agent code</button>
+    <button onclick="answer('Correct. Turn working telemetry into screenshots, dashboard practice, and blog narrative.')">Package the evidence</button>
+    <button onclick="answer('Not enough. Reading without artifacts will not help the blog or demo.')">Only read more docs</button>
+    <p class="answer" id="answer"></p>
+  </div>
+
+  <footer>
+    Bring the blog draft back to the agent for review. Ask for ruthless feedback on clarity, evidence, and whether it sounds like a real learner rather than a marketing post.
+  </footer>
+</main>
+<script>
+function answer(text) {
+  document.getElementById('answer').textContent = text;
+}
+</script>
+</body>
+</html>

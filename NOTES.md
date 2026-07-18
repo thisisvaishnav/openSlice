@@ -11,3 +11,4 @@
 - Tactical pre-event opportunity: self-host SigNoz, send data, explore traces/metrics/logs/dashboards/alerts, then publish a proper blog before July 19, 2026 for the early blog prize.
 - July 14, 2026 daily focus: install SigNoz with Foundry, send toy telemetry, read Foundry MCP docs, inspect OTel Collector Contrib issues/PRs, and outline the pre-event blog.
 - User chose the "Observability for AI / Agent systems" direction, specifically "Build Agents and setup E2E observability with SigNoz." Treat this as the main project track unless the user changes it.
+- User completed all blocks of Lesson 0002 on July 15, 2026. Next focus: turn working telemetry into screenshots, dashboard practice, blog draft, and final project design notes.
